@@ -9,6 +9,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+		alert('bindEvents');
     },
     // deviceready Event Handler
     //
@@ -18,5 +19,14 @@ var app = {
         app.receivedEvent('deviceready');
 		alert('deviceready');
     },
+	
+	icon: function() {
+		alert('icon');
+    },
 
 };
+
+// Application Constructor
+    home: function() {
+        alert('home');
+    }
