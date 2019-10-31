@@ -31,7 +31,7 @@
     <!-- Define app icon and splashscreen for each platform. -->
     <icon src="icon.png" />
 	<splash src="splash.png" />
-    <platform name="android">
+<!--     <platform name="android">
         <icon   src="www/res/icon/android/drawable-ldpi-icon.png"               density="ldpi" />
         <icon   src="www/res/icon/android/drawable-mdpi-icon.png"               density="mdpi" />
         <icon   src="www/res/icon/android/drawable-hdpi-icon.png"               density="hdpi" />
@@ -79,7 +79,7 @@
         <splash src="www/res/screen/ios/Default-Portrait~ipad.png"      platform="ios" width="768"  height="1024" />
         <splash src="www/res/screen/ios/Default@2x~iphone.png"          platform="ios" width="640"  height="960" />
         <splash src="www/res/screen/ios/Default~iphone.png"             platform="ios" width="320"  height="480" />
-    </platform>
+    </platform> -->
 
 	<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
 		<string>Para escanear el código QR</string>

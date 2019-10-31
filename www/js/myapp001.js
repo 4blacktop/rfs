@@ -53,7 +53,7 @@ function scan(){
 				document.getElementById('icon').innerHTML = '<img src="img/icon-error.png" width="100%" alt="ok" />';
 				document.getElementById('home').innerHTML = '<img src="img/icon-app-big.png" height="100%" alt="home" />';
 				// document.getElementById('result').innerHTML = '<font color="#e35520">scan<br />cancelled</font>'; 
-				document.getElementById('result').innerHTML = '<font color="#e35520">escaneo<br />Отмена</font>'; 
+				document.getElementById('result').innerHTML = '<font color="#e35520">escaneo<br />cancelado</font>'; 
 				$("#main").show();
 				$("#home").show();
 				$("#icon").show();
