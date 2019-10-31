@@ -23,17 +23,17 @@ document.addEventListener('deviceready', function () {
 	// alert('deviceready');
 	// navigator.splashscreen.hide();
 
-	spscreen();
+	// spscreen();
 	// setTimeout(scan, 10000);
 });
 
-function spscreen(){
+/* function spscreen(){
 	navigator.splashscreen.show();
 	// timeoutID = window.setTimeout(navigator.splashscreen.hide, 5000);
 	timeoutID = window.setTimeout(scan, 5000);
 	// scan();
 }
-
+ */
 
 function scan(){
 	// alert('scan');
