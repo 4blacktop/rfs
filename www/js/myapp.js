@@ -15,10 +15,11 @@ $(function() {// Handler for .ready() called.
 });
 
 function onBackKeyDown(e) {
-  e.preventDefault();
+	e.preventDefault();
 }
 
 document.addEventListener('deviceready', function () {
+	alert('deviceready');
 	// navigator.splashscreen.show();
 	// alert('deviceready');
 	// navigator.splashscreen.hide();
@@ -36,7 +37,7 @@ document.addEventListener('deviceready', function () {
  */
 
 function scan(){
-	// alert('scan');
+	alert('scan');
 	// navigator.splashscreen.hide();
 	window.clearTimeout(timeoutID);
 	if (navigator.connection.type == Connection.NONE) { // error qr code not found
