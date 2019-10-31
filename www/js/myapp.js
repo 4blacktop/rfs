@@ -6,7 +6,7 @@ var timeoutID;
 
 $(function() {// Handler for .ready() called.
 
-	$("#main").hide();
+	// $("#main").hide();
 	// $("#result").hide();
 	// alert('ready');
 	// scan();
