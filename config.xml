@@ -19,8 +19,8 @@
     <!-- Define the main entry-point to the application -->
     <content src="index.html" />
 	
-	<icon src="icon.png" />
-	<splash src="splash.png" />
+	<icon src="www/res/icon.png" />
+	<splash src="www/res/splash.png" />
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="true" />
