@@ -37,7 +37,7 @@ document.addEventListener('deviceready', function () {
 
 function scan(){
 	// alert('scan');
-	navigator.splashscreen.hide();
+	// navigator.splashscreen.hide();
 	window.clearTimeout(timeoutID);
 	if (navigator.connection.type == Connection.NONE) { // error qr code not found
 	// alert('Connection.NONE: 25');
