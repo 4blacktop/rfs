@@ -1,4 +1,4 @@
-var app = {
+/* var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -33,7 +33,7 @@ var app = {
 };
 
 
-
+ */
 
 function scan(){
 	cordova.plugins.barcodeScanner.scan(
@@ -48,6 +48,7 @@ function scan(){
 	);
 }
 
+/* 
 function qr(){
 	cordova.plugins.barcodeScanner.scan(
 		function (result) {
@@ -77,7 +78,7 @@ function qr(){
 	 );
 } 
 
-
+ */
 
 
 /* 
