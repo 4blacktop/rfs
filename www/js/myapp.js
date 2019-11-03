@@ -39,10 +39,10 @@ function scan(){
 			// alert(JSON.stringify(result));
 			document.getElementById('result').innerHTML = result.text;
 			$.get( "https://moibiz27.ru/rfs/log.php?qrcode=" + result.text, function( data ) { // ajax GET // console.log('data: ' + data.toSource());
-			if(data == Boolean(false)) { // error 
+/* 			if(data == Boolean(false)) { // error 
 				document.getElementById('status-connection').style.backgroundColor = "#9898FB";
 				document.getElementById('status-traffic').style.backgroundColor = "#9898FB";
-			} else {
+			} else { */
 				
 				var text = result.text;
 				var searchTerm = '-';
