@@ -22,6 +22,7 @@ function test(){
 	// result.text = "test";
 	alert("test");
 	$.get( "http://moibiz27.ru/rfs/log.php?qrcode=testapp", function( data ) { // ajax GET // console.log('data: ' + data.toSource());
+	alert(data);
 	if(data == Boolean(false)) { // error qr code not found
 		document.getElementById('status-connection').style.backgroundColor = "#9898FB";
 		document.getElementById('status-traffic').style.backgroundColor = "#9898FB";
