@@ -50,7 +50,7 @@ function scan(){
 		{
 			saveHistory: true, // Android, save scan history (default false)
 			prompt : "Направьте камеру на QR код", // Android
-			resultDisplayDuration: 0, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
+			resultDisplayDuration: 1000, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
 			formats : "QR_CODE,PDF_417", // default: all but PDF_417 and RSS_EXPANDED
 			orientation : "portrait", // Android only (portrait|landscape), default unset so it rotates with the device
 		}
