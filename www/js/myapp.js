@@ -36,11 +36,12 @@
  */
 
 function scan(){
+	document.getElementById('result').value = 'test';
 	cordova.plugins.barcodeScanner.scan(
 		function(result){
 			//success callback
 			// alert(JSON.stringify(result));
-			document.getElementById('result').value = result.text
+			document.getElementById('result').value = result.textж
 		},
 	function(error){
 			//error callback
