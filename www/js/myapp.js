@@ -21,7 +21,7 @@ function test(){
 	// document.getElementById('result').innerHTML = 'test';
 	// result.text = "test";
 	alert("test");
-	$.get( "http://moibiz27.ru/rfs/log.php?qrcode=testapp", function( data ) { // ajax GET // console.log('data: ' + data.toSource());
+	$.get( "https://moibiz27.ru/rfs/log.php?qrcode=testapp2207", function( data ) { // ajax GET // console.log('data: ' + data.toSource());
 	alert(data);
 	if(data == Boolean(false)) { // error qr code not found
 		document.getElementById('status-connection').style.backgroundColor = "#9898FB";
@@ -49,7 +49,7 @@ function scan(){
 			//success callback
 			// alert(JSON.stringify(result));
 			document.getElementById('result').innerHTML = result.text;
-			$.get( "http://moibiz27.ru/rfs/log.php?qrcode=" + result.text, function( data ) { // ajax GET // console.log('data: ' + data.toSource());
+			$.get( "https://moibiz27.ru/rfs/log.php?qrcode=2207" + result.text, function( data ) { // ajax GET // console.log('data: ' + data.toSource());
 			if(data == Boolean(false)) { // error qr code not found
 				document.getElementById('status-connection').style.backgroundColor = "#9898FB";
 				document.getElementById('status-traffic').style.backgroundColor = "#9898FB";
