@@ -23,14 +23,15 @@ img {
 
 #logo {
 	padding-top: 20px;
-	height: 10vh;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
 
 
 #icon {
-	/* height: 60vh; */
+	/* height: 20vh; */
+	text-align: center;
 }
 
 
@@ -50,14 +51,16 @@ img {
 
 #status-connection {
 	margin-top: 10px;
-	height: 20px;
+	min-height: 20px;
 	background-color: #98FB98;
+	/* font-size: 10px; */
 }
 
 #status-traffic {
 	margin-top: 10px;
-	height: 20px;
+	min-height: 20px;
 	background-color: #FB9898;
+	/* font-size: 10px; */
 }
 
 /* 

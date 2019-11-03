@@ -23,7 +23,7 @@
     <content src="index.html" />
 	
 	<icon src="www/icon.png" />
-	<splash src="www/splash.png" />
+	<!-- <splash src="www/splash.png" /> -->
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="true" />

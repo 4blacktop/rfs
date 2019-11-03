@@ -17,29 +17,18 @@ function onBackKeyDown(e) {
 }
  
 function test(){
-	// console.log(document.getElementById('result').innerHTML);
-	// document.getElementById('result').innerHTML = 'test';
-	// result.text = "test";
-	alert("test");
-	$.get( "https://moibiz27.ru/rfs/log.php?qrcode=testapp2207", function( data ) { // ajax GET // console.log('data: ' + data.toSource());
-	alert(data);
-	if(data == Boolean(false)) { // error qr code not found
-		document.getElementById('status-connection').style.backgroundColor = "#9898FB";
-		document.getElementById('status-traffic').style.backgroundColor = "#9898FB";
-	} else {
-		alert(data);
-		// console.log(data);
-		// document.getElementById('status-traffic').innerHTML = result.text;
-		// if (data['date-first-query'] == null) { // first query
-			// ok(data);
-		// } else { // already queried
-			// warning(data);
-		}
-	});
+	var text = "Тестов Тест Тестович-01.11.2019-18:20";
+	var searchTerm = '-';
+	var indexOfFirst = text.lastIndexOf(searchTerm);
+	var divider = text.lastIndexOf(searchTerm, (indexOfFirst - 1));	
+	var part1 = text.substr(0, divider);
+	var part2 = text.substr(divider+1);
 	
-	
-
-	
+	console.log("indexOfFirst: " + indexOfFirst);
+	console.log("divider: " + divider);
+	console.log("text: " + text);
+	console.log("part1: " + part1);
+	console.log("part2: " + part2);
 }
 
 function scan(){
@@ -49,11 +38,20 @@ function scan(){
 			//success callback
 			// alert(JSON.stringify(result));
 			document.getElementById('result').innerHTML = result.text;
-			$.get( "https://moibiz27.ru/rfs/log.php?qrcode=2207" + result.text, function( data ) { // ajax GET // console.log('data: ' + data.toSource());
-			if(data == Boolean(false)) { // error qr code not found
+			$.get( "https://moibiz27.ru/rfs/log.php?qrcode=" + result.text, function( data ) { // ajax GET // console.log('data: ' + data.toSource());
+			if(data == Boolean(false)) { // error 
 				document.getElementById('status-connection').style.backgroundColor = "#9898FB";
 				document.getElementById('status-traffic').style.backgroundColor = "#9898FB";
 			} else {
+				
+				var text = result.text;
+				var searchTerm = '-';
+				var indexOfFirst = text.lastIndexOf(searchTerm);
+				var divider = text.lastIndexOf(searchTerm, (indexOfFirst - 1));	
+				var part1 = text.substr(0, divider);
+				var part2 = text.substr(divider+1);
+				document.getElementById('status-connection').innerHTML = part1;
+				document.getElementById('status-traffic').innerHTML = part2;
 				// console.log(data);
 				// document.getElementById('status-traffic').innerHTML = result.text;
 				// if (data['date-first-query'] == null) { // first query
@@ -63,7 +61,7 @@ function scan(){
 				}
 			});
 		},
-	function(error){
+		function(error){
 			//error callback
 			alert(JSON.stringify(error));
 		},
