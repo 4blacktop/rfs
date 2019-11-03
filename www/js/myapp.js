@@ -30,6 +30,10 @@ var app = {
         console.log('Received Event: ' + id);
     }
 	
+
+};
+/* 
+
 	function QRScan(){
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
@@ -63,11 +67,7 @@ var app = {
 		alert('scan');
 		// window.clearTimeout(timeoutID);
 	}
-};
-
-
-
-
+ */
 
 // document.addEventListener("offline", onOffline, false);
 // document.addEventListener("online", onOnline, false);
