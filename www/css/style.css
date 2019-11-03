@@ -1,90 +1,56 @@
 body{
-	/* background: radial-gradient(circle, #BBDDff 1%, #6699ff 95%) fixed; */
-	margin: 0;
+	font-family: Verdana,sans-serif;
+	margin: 0 10px;
 	padding: 0;
-
-	background: #b3b3b3;
-	background: red; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(left, #ffffff, #b3b3b3); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(right, #ffffff, #b3b3b3); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(right, #ffffff, #b3b3b3); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to right, #ffffff , #b3b3b3); /* Standard syntax */
+	max-width: 100%;
+	
+	background: #ffffff;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;	/* prevent copy paste, to allow, change 'none' to 'text' */
+	
+	
 
 }
 
-/* h1 {
-	color: black;
-	text-align: center;
-	font-family: sans-serif;
-	background-color: white;
-	width: 50%;
-	margin: auto;
-} */
-
-#main{
+img {
+	max-width: 100%;
 }
 
+#wrapper {
+	
+}
 
 #logo {
-	position: absolute; /* Абсолютное позиционирование */
-    top: 12%; /* Положение от нижнего края */
-	/* background:  url(../img/logo-trueliq.png);
-	background-size: cover;	 */
-	width: 100%;
-	height: 8%;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
+	padding-top: 20px;
+	height: 10vh;
 }
+
+
 
 #icon {
-	position: absolute; /* Абсолютное позиционирование */
-    top: 27%; /* Положение от нижнего края */
-	left: 30%;
-	/* background:  url(../img/logo-trueliq.png);
-	background-size: cover;	 */
-	width: 40%;
-	display: block;
+	/* height: 60vh; */
 }
+
 
 #result {
-
-
-	position: absolute;
-	top: 58%;
-	width: 100%;
-	height: 23%;
-	/* height: 90px; */
+	/* height: 30vh; */
 	text-align: center;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	
-	background: #dadada;
-	background: red; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(left, #ffffff, #dadada); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(right, #ffffff, #dadada); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(right, #ffffff, #dadada); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to right, #ffffff , #dadada); /* Standard syntax */	
-	
-	border-radius: 15px;
-	
-	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center; /* align vertical */
-	
-	/* border: black 2px; */
-	/* font-size: larger; */
+	margin: 0px auto;
+	font-size: 20px;
 }
 
-#home {
-	position: absolute;
-    top: 87%;
-	height: 8%;
-	width: 100%;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
+#status-connection {
+	margin-top: 10px;
+	height: 20px;
+	
 }
+
+#status-traffic {
+	margin-top: 10px;
+	height: 20px;
+}
+
 /* 
 .wrapper{
 	position: absolute;
