@@ -34,8 +34,7 @@ var app = {
 
 
 
-function scan(){
-	alert('QRScan');
+function qr(){
 	cordova.plugins.barcodeScanner.scan(
 		function (result) {
 			alert("We got a barcode\n" +
@@ -43,7 +42,7 @@ function scan(){
 				  "Format: " + result.format + "\n" +
 				  "Cancelled: " + result.cancelled);
 
-			document.getElementById('cryptoId').value = result.text
+			document.getElementById('status-connection').value = result.text
 		},
 		function (error) {
 			alert("Scanning failed: " + error);
@@ -57,7 +56,7 @@ function scan(){
 			prompt : "Place a barcode inside the scan area", // Android
 			resultDisplayDuration: 500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
 			formats : "QR_CODE,PDF_417", // default: all but PDF_417 and RSS_EXPANDED
-			orientation : "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
+			orientation : "portrait", // Android only (portrait|landscape), default unset so it rotates with the device
 			disableAnimations : true, // iOS
 			disableSuccessBeep: false // iOS and Android
 		}
