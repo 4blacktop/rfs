@@ -38,6 +38,7 @@ function scan(){
 	}
 
 	function QRScan(){
+		alert('QRScan');
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
 				alert("We got a barcode\n" +
@@ -66,10 +67,7 @@ function scan(){
 		 );
 	} 
 
-	function scan(){
-		alert('scan');
-		// window.clearTimeout(timeoutID);
-	}
+
 
 /* 
 function scan(){
