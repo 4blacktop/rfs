@@ -37,11 +37,6 @@ var app = {
 		}
 };
 
-function scan(){
-		alert('scan');
-		// window.clearTimeout(timeoutID);
-	}
-
 
 /* 
 
