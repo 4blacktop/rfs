@@ -15,6 +15,8 @@
     <author href="https://vladimirklochkov.ru" email="4blogga@gmail.com">
         Vladimir Klochkov
     </author>
+	
+	<preference name="phonegap-version" value="cli-6.5.0" />
 
     <!-- Define the main entry-point to the application -->
     <content src="index.html" />
