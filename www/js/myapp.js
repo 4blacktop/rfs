@@ -31,7 +31,18 @@ var app = {
     }
 	
 
+	function scan(){
+			alert('app.scan');
+			// window.clearTimeout(timeoutID);
+		}
 };
+
+function scan(){
+		alert('scan');
+		// window.clearTimeout(timeoutID);
+	}
+
+
 /* 
 
 	function QRScan(){
