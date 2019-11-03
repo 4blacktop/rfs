@@ -9,7 +9,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-		alert('deviceready');
+		// alert('deviceready');
     },
     // deviceready Event Handler
     //
@@ -33,6 +33,20 @@ var app = {
 };
 
 
+
+
+function scan(){
+	cordova.plugins.barcodeScanner.scan(
+		function(result){
+			//success callback
+			alert(JSON.stringify(result));
+		},
+	function(error){
+			//error callback
+			alert(JSON.stringify(error));
+		}
+	);
+}
 
 function qr(){
 	cordova.plugins.barcodeScanner.scan(
