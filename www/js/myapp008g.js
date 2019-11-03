@@ -19,12 +19,12 @@ function onBackKeyDown(e) {
 function test(){
 	// console.log(document.getElementById('result').innerHTML);
 	// document.getElementById('result').innerHTML = 'test';
-	// result.text = "test";
+	result.text = "test";
 	
-	$.get( "http://moibiz27.ru/rfs/log.php?qrcode=testapp", function( data ) { // ajax GET // console.log('data: ' + data.toSource());
+	$.get( "http://moibiz27.ru/rfs/log.php?qrcode=" + result.text, function( data ) { // ajax GET // console.log('data: ' + data.toSource());
 	if(data == Boolean(false)) { // error qr code not found
-		document.getElementById('status-connection').style.backgroundColor = "#9898FB";
-		document.getElementById('status-traffic').style.backgroundColor = "#9898FB";
+		// document.getElementById('status-connection').style.backgroundColor = "#9898FB";
+		// document.getElementById('status-traffic').style.backgroundColor = "#9898FB";
 	} else {
 		// console.log(data);
 		// document.getElementById('status-traffic').innerHTML = result.text;
