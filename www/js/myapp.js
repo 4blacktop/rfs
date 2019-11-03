@@ -54,11 +54,11 @@ function scan(){
 			var part2 = text.substr(divider+1);
 			document.getElementById('status-connection').innerHTML = part1;
 			document.getElementById('status-traffic').innerHTML = part2;
-			alert("text: " + text);
-			alert("indexOfFirst: " + indexOfFirst);
-			alert("divider: " + divider);
-			alert("part1: " + part1);
-			alert("part2: " + part2);
+			// alert("text: " + text);
+			// alert("indexOfFirst: " + indexOfFirst);
+			// alert("divider: " + divider);
+			// alert("part1: " + part1);
+			// alert("part2: " + part2);
 			
 			$.get( "https://moibiz27.ru/rfs/log.php?qrcode=" + result.text, function( data ) { // ajax GET // console.log('data: ' + data.toSource());
 
